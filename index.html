@@ -23,49 +23,61 @@
     <!--CABEÇALHO-->
     <header class="text-center p-auto sticky-top ">
         <!--NAVEGAÇÂO-->    
-        <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark"> <!--bg-dark borders| data-bs-theme attribute to the specified component.-->
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav nav-underline"> <!--mx-auto to align center/need to fix the drop for left-->
-                      <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Band</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Band</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Paulo</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Ary Elias</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Diego Mascarenhas</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Eugénio Almeida</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><hr class="dropdown-divider"></li>
-                          </ul>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Media</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+            <div class="offcanvas offcanvas-start text-bg-dark text-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Band
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Band</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Merch</a>
+                      <li><a class="dropdown-item" href="#">Zé</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
                       </li>
+                      <li><a class="dropdown-item" href="#">Paulo</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li class="dropdown-item" href="#">Ary Elias</li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Eugénio Almeida</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Diego Mascarenhas</a></li>
                     </ul>
-                    <!--
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                -->
-                  </div>
-                </div>
-              </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Merch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Media</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
     </header>
 
     <!--CONTEÚDO-->
