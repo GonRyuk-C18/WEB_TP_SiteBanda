@@ -82,11 +82,22 @@ header img {
 
 }
 
+.colframe .card{
+    height: 400px;
+}
+
+.colframe .card iframe{
+    height: 400px;
+}
+
+
 body {
     background-color: black;
     font-family: sans-serif;
     color: aliceblue;
 }
+
+
 
 
 footer i {
