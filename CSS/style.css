@@ -1,6 +1,94 @@
-body{
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --primary:rgb(0, 0, 0);
+    --secundary:aliceblue;
+
 }
-footer i{
+
+*{
+    font-family:"Bona Nova SC" , sans-serif ;
+}
+
+header img {
+    width: 90px;
+    height: 70px;
+}
+
+.containerDetails{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.containerDetails .col-sm-6{
+    top: 20%;
+    max-width: 80%;
+    padding-right: 5%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    color: aliceblue;
+    text-shadow: 0 5px 10px #004;
+}
+
+.containerDetails .col-sm-6 .content .Band {
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
+}
+
+.containerDetails .col-sm-6 .content .title {
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 25px;
+
+}
+
+.containerDetails .col-sm-6 .content .Name {
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 3em;
+}
+
+.containerDetails .col-sm-6 .content .text {
+    font-style: italic;
+    letter-spacing: 0.5px;
+    padding-top: 5%;
+
+
+}
+
+.containerDetails .col-sm-6 .content .Icons {
+    padding-top: 5%;
+    letter-spacing: 5px;
+
+}
+
+.containerDetails .col-sm-6 .content .Icons a {
+    color: rgba(169, 169, 169, 0.712);
+}
+
+
+
+.imgLateral {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.containerGroup{
+    margin-top: 30px;
+    text-align: center;
+
+
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+
+footer i {
     color: aliceblue;
 }
