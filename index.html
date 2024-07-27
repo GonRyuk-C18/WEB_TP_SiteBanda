@@ -78,6 +78,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="Media.html">Media</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ContactUs">Contact</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -89,7 +92,7 @@
     <main>
 
       <div class="container-fluid ">
-            <img src="https://maisnoite.pt/wp-content/uploads/2023/10/2-Cape-Torment_03-scaled.jpg" class="d-block w-100" alt="...">
+            <img src="https://maisnoite.pt/wp-content/uploads/2023/10/2-Cape-Torment_03-scaled.jpg" class="d-block w-100 " alt="...">
           </div>
         </div>
       
@@ -98,8 +101,8 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="cardcol">
-            <div class="imagecard h-100">
-            <img src="media/img/buraco.jpg" class="card-img-top" alt="...">
+            <div class="imagecard">
+            <img src="media/img/buraco.jpg" class="card-img-top " alt="...">
            </div>
             <div class="card-body">
               <h5 class="card-title">Buraco Pub</h5>
@@ -110,7 +113,7 @@
         </div>
         <div class="col">
           <div class="cardcol">
-            <div class="imagecard h-100">
+            <div class="imagecard">
             <img src="media/img/viseu-death-fest-2023.1.png" class="card-img-top" alt="...">
           </div>
             <div class="card-body">
@@ -122,7 +125,7 @@
         </div>
         <div class="col">
           <div class="cardcol">
-            <div class="imagecard h-100">
+            <div class="imagecard">
               <img src="media/img/Laurus_Cartazfinal.webp" class="card-img-top" alt="...">
           </div>
             <div class="card-body">
@@ -134,6 +137,49 @@
         </div>
       </div>
     </div>
+
+    <div class="container-fluid">
+
+
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="ContactUs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-0">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="DeatMetal666@email.com">
+          </div>
+          <div class="mb-1">
+            <label for="SelectSumonUP" class="form-label">Summon up</label>
+            <select id="SelectSumonUP" class="form-select">
+              <option>Gig Budget</option>
+              <option>Store</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     </main>
 

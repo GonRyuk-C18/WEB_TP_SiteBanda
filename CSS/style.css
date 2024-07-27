@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+
 
 :root{
     --primary:rgb(0, 0, 0);
@@ -7,7 +8,10 @@
 }
 
 *{
-    font-family:"Bona Nova SC" , sans-serif ;
+    text-transform: uppercase;
+    font-size: medium;
+    font-family:"Bona Nova SC", "Bona Nova", 'Times New Roman', sans-serif ;
+    
 }
 
 header img {
@@ -31,8 +35,8 @@ header img {
     padding-right: 5%;
     padding-left: 5%;
     box-sizing: border-box;
-    color: aliceblue;
-    text-shadow: 0 5px 10px #004;
+    color: var(--secundary);
+    text-shadow: 0 5px 10px var(--primary);
 }
 
 .containerDetails .col-sm-6 .content .Band {
@@ -96,15 +100,20 @@ header img {
 }
 
 
+.price{
+    font-size:large
+}
+
 body {
-    background-color: black;
+    background-color:var(--primary);
     font-family: sans-serif;
-    color: aliceblue;
+    color: var(--secundary);
 }
 
 
 
 
+
 footer i {
-    color: aliceblue;
+    color: var(--secundary);
 }
