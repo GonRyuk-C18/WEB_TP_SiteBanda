@@ -78,6 +78,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="Media.html">Media</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#ContactUs">Contact</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -120,12 +123,56 @@
         <img src="media/img/Cape backlogo.png" class="img-fluid" alt="">
       </div>
     </div>
+
+        <!-- Modal -->
+<div class="modal fade" id="ContactUs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
+       </div>
+      <div class="modal-body">
+          <form action="" method="get" class="Cotactform needs-validation" novalidate>
+          <div class="mb-0">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="DeatMetal666@email.com" required>
+            <div class="invalid-feedback">
+              Please provide a valid Email.
+            </div>
+          </div>
+          <div class="mb-1">
+            <label for="SelectSumonUP" class="form-label">Summon up</label>
+            <select id="SelectSumonUP" class="form-select" required>
+              <option>Gig Budget</option>
+              <option>Store</option>
+              <option>Other</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select an option.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            <div class="invalid-feedback">
+              Message Required.
+            </div>
+          </div>
+          <div class="modalOptions text-end">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
     
 </main>
 
 <!--RODAPÉ-->
-<footer class="bg-dark">
-  <div class=" text-center">
+<footer class="footer">
+  <div class="footercontainer text-center">
     <a href="https://www.instagram.com/capetorment/?locale=en_CA" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     <a href="https://www.facebook.com/CapeTormentOfficial/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
     <a href="https://x.com/capetormentband" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
@@ -133,7 +180,8 @@
     <a href="https://soundcloud.com/capetorment" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
   </div>
   <div>
-    <p class="final text-center text-light">2024, <a href="index.html">Cape Torment</a>, Developed by Pedro Carvalho (Linkedin Link) </p>
+    <p class="developer mt-2 text-center text-light"><a href="index.html">Cape Torment</a> <br> &copy; 2024 Pedro Carvalho</p>
+    
   </div>
   
 </footer>
@@ -142,7 +190,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <!--MEU JS-->
-<script></script>
+<script src="JS/main.js"></script>
 
 </body>
 

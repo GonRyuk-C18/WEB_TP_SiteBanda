@@ -122,3 +122,12 @@ body {
 footer i {
     color: var(--secundary);
 }
+
+.footercontainer{
+padding-top: 2%;
+letter-spacing: 5px;
+}
+
+.footercontainer i{
+    font-size: larger;
+}
