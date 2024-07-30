@@ -42,7 +42,7 @@ header img {
 .containerDetails .col-sm-6 .content .Band {
     font-weight: bold;
     letter-spacing: 10px;
-    text-transform: uppercase;
+    
 
 }
 
@@ -50,6 +50,7 @@ header img {
     font-weight: bold;
     letter-spacing: 5px;
     font-size: 25px;
+    color: rgb(122, 121, 121);
 
 }
 
@@ -70,11 +71,12 @@ header img {
 .containerDetails .col-sm-6 .content .Icons {
     padding-top: 5%;
     letter-spacing: 5px;
+    padding-bottom: 5%;
 
 }
 
 .containerDetails .col-sm-6 .content .Icons a {
-    color: rgba(169, 169, 169, 0.712);
+    color: rgb(122, 121, 121);
 }
 
 
@@ -99,6 +101,51 @@ header img {
     height: 400px;
 }
 
+.FavBands{
+    padding-top: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: rgb(122, 121, 121);
+}
+
+.Gear{
+    padding-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: rgb(122, 121, 121);
+}
+
+.GearSub{
+    padding-top: 30px;
+    font-weight: bold;
+    font-style:italic;
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: rgb(122, 121, 121);
+    
+    
+}
+.containerDetails p{
+    font-size: small;
+    padding-top: 30px;
+    
+}
+
+
+.merchcard{
+    text-align: center;
+}
+
+.card-img-top{
+    padding: auto;
+    max-width: 80%;
+}
 
 .price{
     font-size:large
@@ -111,7 +158,8 @@ body {
 }
 
 .fade-in {
-    animation: fade-in 5s linear;
+    animation: fade-in both; /* both to aplied on both ways so the image is not allready there */
+    animation-timeline: view(100% 10%) ; /* animation timeline to function view 90% screen when animation is complette, 10% where it starts */
   }
   @keyframes fade-in {
     from { opacity: 0; }
@@ -130,4 +178,9 @@ letter-spacing: 5px;
 
 .footercontainer i{
     font-size: larger;
+}
+
+footer p a{
+    color: var(--secundary);
+
 }
