@@ -1,35 +1,35 @@
 
-
-
-:root{
-    --primary:rgb(0, 0, 0);
-    --secundary:aliceblue;
-
+:root {
+    --primary: rgb(0, 0, 0);
+    --secundary: aliceblue;
 }
 
-*{
+* {
     text-transform: uppercase;
     font-size: medium;
-    font-family:"Bona Nova SC", "Bona Nova", 'Times New Roman', sans-serif ;
-    
+    font-family: "Bona Nova SC", "Bona Nova", 'Times New Roman', sans-serif;
 }
 
-header img {
-    width: 90px;
-    height: 70px;
+/*index*/
+
+header img { /* img on navbar*/
+    max-width: 80px;
+    max-height: 60px;
 }
 
-.cardcol {
+.cardcol { /*card on index page for gigs - background set and text align*/
     background-color: var(--primary);
     text-align: center;
 }
 
-.containerDetails{
+/*Band/BandMembers*/
+
+.containerDetails {/*container on dropdown band pages margins set */
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
-.containerDetails .col-sm-6{
+.containerDetails .col-sm-6 {/*collums on containerDetail */
     top: 20%;
     max-width: 80%;
     padding-right: 5%;
@@ -39,14 +39,14 @@ header img {
     text-shadow: 0 5px 10px var(--primary);
 }
 
-.containerDetails .col-sm-6 .content .Band {
+.containerDetails .col-sm-6 .content .Band { /*Band class costumize font/text*/
     font-weight: bold;
     letter-spacing: 10px;
-    
+
 
 }
 
-.containerDetails .col-sm-6 .content .title {
+.containerDetails .col-sm-6 .content .title {/*title class costumize font/text*/
     font-weight: bold;
     letter-spacing: 5px;
     font-size: 25px;
@@ -54,13 +54,13 @@ header img {
 
 }
 
-.containerDetails .col-sm-6 .content .Name {
+.containerDetails .col-sm-6 .content .Name {/*Name class costumize font/text*/
     font-weight: bold;
     letter-spacing: 5px;
     font-size: 3em;
 }
 
-.containerDetails .col-sm-6 .content .text {
+.containerDetails .col-sm-6 .content .text {/*text class costumize font/text*/
     font-style: italic;
     letter-spacing: 0.5px;
     padding-top: 5%;
@@ -68,40 +68,30 @@ header img {
 
 }
 
-.containerDetails .col-sm-6 .content .Icons {
+.containerDetails .col-sm-6 .content .Icons {/*Icon class costumize */
     padding-top: 5%;
     letter-spacing: 5px;
     padding-bottom: 5%;
 
 }
 
-.containerDetails .col-sm-6 .content .Icons a {
+.containerDetails .col-sm-6 .content .Icons a {/*a on Icon class costumize color*/
     color: rgb(122, 121, 121);
 }
 
 
-
-.imgLateral {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+.imgLateral { /*lateral img set to black and white*/
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
-.containerGroup{
+.containerGroup{ /*container with image on bottom of Band page, used on fade-in for center since equal*/
     margin-top: 30px;
     text-align: center;
-
-
 }
 
-.colframe .card{
-    height: 400px;
-}
-
-.colframe .card iframe{
-    height: 400px;
-}
-
-.FavBands{
+.FavBands { /*class Favbands on Band Member pages font/text costumize*/
     padding-top: 30px;
     font-weight: bold;
     font-style: italic;
@@ -111,7 +101,7 @@ header img {
     color: rgb(122, 121, 121);
 }
 
-.Gear{
+.Gear { /*class Gear on Band Member pages font/text costumize*/
     padding-top: 20px;
     font-weight: bold;
     font-style: italic;
@@ -121,70 +111,87 @@ header img {
     color: rgb(122, 121, 121);
 }
 
-.GearSub{
+.GearSub {/*class Gearsub on Band Member pages font/text costumize*/
     padding-top: 30px;
     font-weight: bold;
-    font-style:italic;
+    font-style: italic;
     letter-spacing: 5px;
     font-size: 15px;
     color: rgb(122, 121, 121);
-    
-    
+
 }
-.containerDetails p{
+
+.containerDetails p { /*p set to small*/
     font-size: small;
     padding-top: 30px;
-    
+
 }
 
+.colframe .card{
+    height: 400px;
+}
 
-.merchcard{
+.colframe .card iframe {
+    height: 400px;
+}
+
+.merchcard {
     text-align: center;
 }
 
-.card-img-top{
+.card-img-top {
     padding: auto;
     max-width: 80%;
 }
 
-.price{
-    font-size:large
+.price {
+    font-size: large
 }
 
-.card-title{
+.card-title {
     color: rgb(122, 121, 121);
 }
 
 body {
-    background-color:var(--primary);
-    font-family: sans-serif;
+    background-color: var(--primary);
     color: var(--secundary);
 }
 
-.fade-in {
-    animation: fade-in both; /* both to aplied on both ways so the image is not allready there */
-    animation-timeline: view(100% 10%) ; /* animation timeline to function view 90% screen when animation is complette, 10% where it starts */
-  }
-  @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+
+.fade-in {/*fade in css efect for image (logo) on bottom of Pages*/
+    text-align: center;
+    margin-top: 20px;
+    animation: fade-in both;
+    /* both to aplied on both ways so the image is not allready there */
+    animation-timeline: view(100% 10%);
+    /* animation timeline to function view 90% screen when animation is complette, 10% where it starts */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 
-footer i {
+footer i {/* footer color for icons*/
     color: var(--secundary);
 }
 
-.footercontainer{
-padding-top: 2%;
-letter-spacing: 5px;
+.footercontainer {
+    padding-top: 2%;
+    letter-spacing: 5px;
 }
 
-.footercontainer i{
+.footercontainer i {
     font-size: larger;
 }
 
-footer p a{
+footer p a {/*set color text links on footer*/
     color: var(--secundary);
 
 }
