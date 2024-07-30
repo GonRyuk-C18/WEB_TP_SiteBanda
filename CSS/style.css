@@ -151,6 +151,10 @@ header img {
     font-size:large
 }
 
+.card-title{
+    color: rgb(122, 121, 121);
+}
+
 body {
     background-color:var(--primary);
     font-family: sans-serif;
