@@ -10,6 +10,11 @@
     font-family: "Bona Nova SC", "Bona Nova", 'Times New Roman', sans-serif;
 }
 
+body {
+    background-color: var(--primary);
+    color: var(--secundary);
+}
+
 /*index*/
 
 header img { /* img on navbar*/
@@ -75,8 +80,9 @@ header img { /* img on navbar*/
 
 }
 
-.containerDetails .col-sm-6 .content .Icons a {/*a on Icon class costumize color*/
+.containerDetails .col-sm-6 .content .Icons i {/*a on Icon class costumize size/color*/
     color: rgb(122, 121, 121);
+    font-size: medium;
 }
 
 
@@ -127,34 +133,33 @@ header img { /* img on navbar*/
 
 }
 
-.colframe .card{
+.colframe .card{/*card media page */
     height: 400px;
 }
 
-.colframe .card iframe {
+.colframe .card iframe { /*iframe card media page*/
     height: 400px;
 }
 
-.merchcard {
+.merchcard {/* merchcard centerd and fade-in animation*/
     text-align: center;
+    animation: fade-in;
+    animation-timeline: view(auto auto);
 }
 
-.card-img-top {
+.card-img-top {/*image on merchcards on merch page*/
     padding: auto;
     max-width: 80%;
 }
 
-.price {
+
+.badge{/*price span on merch page*/
+    margin-top: 5%;
     font-size: large
 }
 
 .card-title {
     color: rgb(122, 121, 121);
-}
-
-body {
-    background-color: var(--primary);
-    color: var(--secundary);
 }
 
 
@@ -187,7 +192,7 @@ footer i {/* footer color for icons*/
     letter-spacing: 5px;
 }
 
-.footercontainer i {
+.footercontainer i {/*footer icon size*/
     font-size: larger;
 }
 
