@@ -99,7 +99,7 @@
       alt="...">
   </div>
 
-<!--CARD-GROUP-->
+  <!--CARD-GROUP-->
   <div class="container-fluid p-3">
     <div class="row row-cols-2 row-cols-md-4 g-4">
       <div class="col">
@@ -162,17 +162,17 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="ContactUs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="ContactUs" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content bg-dark">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
+          <h1 class="modal-title fs-5" id="ModalLabel">Contact Us</h1>
         </div>
         <div class="modal-body">
-          <form action="" method="get" class="Cotactform needs-validation" novalidate>
+          <form action="index.html" method="get" class="Cotactform needs-validation" novalidate>
             <div class="mb-0">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="DeatMetal666@email.com"
+              <label for="InputEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmail" name="Email" placeholder="DeatMetal666@email.com"
                 required>
               <div class="invalid-feedback">
                 Please provide a valid Email.
@@ -180,7 +180,7 @@
             </div>
             <div class="mb-1">
               <label for="SelectSumonUP" class="form-label">Summon up</label>
-              <select id="SelectSumonUP" class="form-select" required>
+              <select id="SelectSumonUP" class="form-select" name="SumonUP" required>
                 <option>Gig Budget</option>
                 <option>Store</option>
                 <option>Other</option>
@@ -190,8 +190,8 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              <label for="FormControlTextarea" class="form-label">Message</label>
+              <textarea class="form-control" id="FormControlTextarea" name="Text" rows="3" minlength="5" maxlength="200" required></textarea>
               <div class="invalid-feedback">
                 Message Required.
               </div>
